@@ -8,7 +8,6 @@
 
 #import "YbsNavigationController.h"
 #import "UIImage+YbsUtil.h"
-#import "HHCommonInitial.h"
 #import "YbsBaseViewController.h"
 #import "UIBarButtonItem+YbsAdd.h"
 
@@ -76,14 +75,6 @@
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return [self.topViewController preferredInterfaceOrientationForPresentation];
-}
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    if ([self.topViewController conformsToProtocol:@protocol(DoubleClickProtocol)] && [self.topViewController respondsToSelector:@selector(isNeedPopGestureAction)]) {
-        UIViewController <DoubleClickProtocol>*vc = (UIViewController <DoubleClickProtocol>*)self.topViewController;
-        return [vc isNeedPopGestureAction];
-    }
-    return YES;
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{

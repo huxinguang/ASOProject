@@ -11,8 +11,6 @@
 
 @interface YbsBaseViewController ()
 
-@property (nonatomic, strong) YbsPlaceholderView *placeholderView;
-
 @end
 
 @implementation YbsBaseViewController
@@ -33,16 +31,6 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    if (self.isPlaceholderShown) {
-        for (UIView *item in self.placeholderView.subviews) {
-            item.alpha = 0;
-        }
-        [UIView animateWithDuration:0.35 animations:^{
-            for (UIView *item in self.placeholderView.subviews) {
-                item.alpha = 1;
-            }
-        }];
-    }
 }
 
 
@@ -94,44 +82,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)showPlaceholderViewWithType:(YbsPlaceholderType)type imgName:(NSString *)name btnTitle:(NSString *)title message:(NSString *)msg  clickBlock:(PlaceholderClickBlock)block{
-    self.placeholderView.imageName = name;
-    self.placeholderView.btnTitle = title;
-    self.placeholderView.msg = msg;
-    self.placeholderView.clickBlock = block;
-    self.placeholderView.type = type;
-    [self.view layoutIfNeeded];
-    [self.view bringSubviewToFront:self.placeholderView];
-    
-}
 
-- (void)dismissPlaceholderView{
-    if ([self.view.subviews containsObject:_placeholderView]) {
-        [_placeholderView removeFromSuperview];
-        _placeholderView = nil;
-    }
-}
 
-#pragma mark - Getter
 
-- (YbsPlaceholderView *)placeholderView{
-    if (!_placeholderView) {
-        _placeholderView = [YbsPlaceholderView new];
-        [self.view addSubview:_placeholderView];
-        [_placeholderView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.view);
-        }];
-    }
-    return _placeholderView;
-}
-
-- (BOOL)isPlaceholderShown{
-    if (!_placeholderView) {
-        return NO;
-    }else{
-        return [self.view.subviews containsObject:_placeholderView];
-    }
-}
 
 
 

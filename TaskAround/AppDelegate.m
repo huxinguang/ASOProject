@@ -9,10 +9,8 @@
 #import "AppDelegate.h"
 #import "YbsTabBarController.h"
 #import "YbsNavigationController.h"
-#import "HHCommonInitial.h"
 #import "UICKeyChainStore.h"
 #import "YbsWelcomeViewController.h"
-#import <AMapFoundationKit/AMapFoundationKit.h>
 #import "YbsLoginViewController.h"
 #import "QCloudCore.h"
 #import <QCloudCOSXML/QCloudCOSXML.h>

@@ -7,7 +7,6 @@
 //
 
 #import "YbsNetworkUtil.h"
-#import "KDCommonMacro.h"
 #import "YbsNavigationController.h"
 #import "YbsLoginViewController.h"
 
@@ -138,7 +137,7 @@ static YbsNetworkUtil *shareUtil = nil;
                 [[UIViewController currentViewController] presentViewController:nav animated:YES completion:nil];
             }
             
-            [SVProgressHUD dismiss];
+//            [SVProgressHUD dismiss];
         }else{
             success(responseObject);
         }

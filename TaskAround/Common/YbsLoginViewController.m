@@ -347,24 +347,25 @@
                                    @"mobile":self.phoneTextField.text,
                                    @"type":@0
                                    };
-    [SVProgressHUD show];
-    @weakify(self);
+    [MBProgressHUD showLoadingInView];
+
     [[YbsNetworkUtil shareInstance] POST:[YbsApi verificationCodeUrl]
                               parameters:parameterDic
                                  success:^(id  _Nonnull responseObject) {
-                                     [SVProgressHUD dismiss];
-                                     @strongify(self);
+                                     [MBProgressHUD hideHUD];
                                      NSDictionary *dic = responseObject;
                                      if ([dic[@"code"] isEqualToString:kYbsSuccess]){
-                                         [self showMessage:@"验证码已发送" hideDelay:1.0];
+                                         [MBProgressHUD showTipInViewWithMessage:@"验证码已发送" hideDelay:1.0];
+                                         
                                      } else{
-                                         [self showMessage:dic[@"message"] hideDelay:1.0];
+                                         [MBProgressHUD showTipInViewWithMessage:dic[kYbsMsgKey] hideDelay:1.0];
+                                         
                                      }
                                  }
                                  failure:^(NSError * _Nonnull error) {
-                                     @strongify(self);
-                                     [SVProgressHUD dismiss];
-                                     [self showMessage:kYbsRequestFailed hideDelay:1.0];
+                                     [MBProgressHUD showTipInViewWithMessage:kYbsRequestFailed hideDelay:1.0];
+                                     
+                                     
                                  }
      ];
 }
@@ -405,12 +406,12 @@
                                    @"mobile":self.phoneTextField.text,
                                    @"verifyCode":self.codeTextField.text
                                    };
-    [SVProgressHUD show];
+    [MBProgressHUD showLoadingInView];
     @weakify(self);
     [[YbsNetworkUtil shareInstance] POST:[YbsApi userLoginUrl]
                               parameters:parameterDic
                                  success:^(id  _Nonnull responseObject) {
-                                     [SVProgressHUD dismiss];
+                                     [MBProgressHUD hideHUD];
                                      @strongify(self);
                                      NSDictionary *dic = responseObject;
                                      if ([dic[kYbsCodeKey] isEqualToString:kYbsSuccess]){
@@ -419,18 +420,18 @@
                                          kUserDefaultSet(userDic, kYbsUserInfoDicKey);
                                          kUserDefaultSynchronize;
                                         
-                                         [self showMessage:@"登录成功" hideDelay:1.0];
+                                         [MBProgressHUD showTipInViewWithMessage:@"登录成功" hideDelay:1.0];
+                                        
                                          if (self.successBlock) {
                                              self.successBlock();
                                          }
                                      } else{
-                                         [self showMessage:dic[kYbsMsgKey] hideDelay:1.0];
+                                         [MBProgressHUD showTipInViewWithMessage:dic[kYbsMsgKey] hideDelay:1.0];
                                      }
                                  }
                                  failure:^(NSError * _Nonnull error) {
-                                     @strongify(self);
-                                     [SVProgressHUD dismiss];
-                                     [self showMessage:kYbsRequestFailed hideDelay:1.0];
+                                     [MBProgressHUD hideHUD];
+                                     [MBProgressHUD showTipInViewWithMessage:kYbsRequestFailed hideDelay:1.0];
                                  }
      ];
 

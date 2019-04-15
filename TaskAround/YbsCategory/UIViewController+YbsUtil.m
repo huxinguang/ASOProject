@@ -98,9 +98,6 @@
 }
 
 
-
-
-
 //分类添加属性
 
 - (void)setAppearedNeedRefresh:(BOOL)appearedNeedRefresh{

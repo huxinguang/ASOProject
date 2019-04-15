@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YbsNavBarButton.h"
 #import "YbsNavTitleView.h"
-#import "YbsPlaceholderView.h"
 #import "UIViewController+YbsUtil.h"
 
 
@@ -33,9 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)onLeftBarButtonClick;
 
-- (void)showPlaceholderViewWithType:(YbsPlaceholderType)type imgName:(NSString *)name btnTitle:(NSString *)title message:(NSString *)msg  clickBlock:(PlaceholderClickBlock)block;
-
-- (void)dismissPlaceholderView;
 
 
 

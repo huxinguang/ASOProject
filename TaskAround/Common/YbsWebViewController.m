@@ -29,19 +29,19 @@
         make.edges.equalTo(self.view);
     }];
     
-    [SVProgressHUD show];
+    [MBProgressHUD showLoadingInView];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.pageUrl]]];
     
 }
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
 {
-    [SVProgressHUD dismiss];
+    [MBProgressHUD hideHUD];
 }
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
-    [SVProgressHUD dismiss];
+    [MBProgressHUD hideHUD];
 }
 
 /*
