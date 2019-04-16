@@ -12,8 +12,6 @@
 #import "UICKeyChainStore.h"
 #import "YbsWelcomeViewController.h"
 #import "YbsLoginViewController.h"
-#import "QCloudCore.h"
-#import <QCloudCOSXML/QCloudCOSXML.h>
 #import <Bugly/Bugly.h>
 #import "YbsMessageViewController.h"
 #import <UMCommon/UMCommon.h>
@@ -31,7 +29,7 @@ typedef NS_ENUM(NSInteger, YbsAppPushStatus) {
 typedef void(^PushCheckHandler)(YbsAppPushStatus);
 
 
-@interface AppDelegate ()<UITabBarControllerDelegate,QCloudSignatureProvider>
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -45,7 +43,6 @@ typedef void(^PushCheckHandler)(YbsAppPushStatus);
         
     }];
     
-    [self configAMap];
     [self configBugly];
     [UMConfigure setEncryptEnabled:YES];//打开加密传输
     
@@ -74,7 +71,6 @@ typedef void(^PushCheckHandler)(YbsAppPushStatus);
     
     [self startJourney];
     [self setUpKeyboard];
-    [self setupCOSXMLShareService];
     [self.window makeKeyAndVisible];
     [self mjRefreshIPhoneX];
     [self isNeedUpdateNewVersion];
@@ -158,33 +154,33 @@ typedef void(^PushCheckHandler)(YbsAppPushStatus);
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
 }
 
-- (void) setupCOSXMLShareService {
-    QCloudServiceConfiguration* configuration = [QCloudServiceConfiguration new];
-    configuration.appID = kQCloudAppID;
-    configuration.signatureProvider = self;
-    QCloudCOSXMLEndPoint* endpoint = [[QCloudCOSXMLEndPoint alloc] init];
-    endpoint.regionName = kQCloudRegion;
-    configuration.endpoint = endpoint;
-    
-    [QCloudCOSXMLService registerDefaultCOSXMLWithConfiguration:configuration];
-    [QCloudCOSTransferMangerService registerDefaultCOSTransferMangerWithConfiguration:configuration];
-}
+//- (void) setupCOSXMLShareService {
+//    QCloudServiceConfiguration* configuration = [QCloudServiceConfiguration new];
+//    configuration.appID = kQCloudAppID;
+//    configuration.signatureProvider = self;
+//    QCloudCOSXMLEndPoint* endpoint = [[QCloudCOSXMLEndPoint alloc] init];
+//    endpoint.regionName = kQCloudRegion;
+//    configuration.endpoint = endpoint;
+//
+//    [QCloudCOSXMLService registerDefaultCOSXMLWithConfiguration:configuration];
+//    [QCloudCOSTransferMangerService registerDefaultCOSTransferMangerWithConfiguration:configuration];
+//}
 
 
 #pragma mark - QCloudSignatureProvider
 
-- (void) signatureWithFields:(QCloudSignatureFields*)fileds
-                     request:(QCloudBizHTTPRequest*)request
-                  urlRequest:(NSMutableURLRequest*)urlRequst
-                   compelete:(QCloudHTTPAuthentationContinueBlock)continueBlock
-{
-    QCloudCredential* credential = [QCloudCredential new];
-    credential.secretID = kQCloudSecretID;
-    credential.secretKey = kQCloudSecretKey;
-    QCloudAuthentationV5Creator* creator = [[QCloudAuthentationV5Creator alloc] initWithCredential:credential];
-    QCloudSignature* signature =  [creator signatureForData:urlRequst];
-    continueBlock(signature, nil);
-}
+//- (void) signatureWithFields:(QCloudSignatureFields*)fileds
+//                     request:(QCloudBizHTTPRequest*)request
+//                  urlRequest:(NSMutableURLRequest*)urlRequst
+//                   compelete:(QCloudHTTPAuthentationContinueBlock)continueBlock
+//{
+//    QCloudCredential* credential = [QCloudCredential new];
+//    credential.secretID = kQCloudSecretID;
+//    credential.secretKey = kQCloudSecretKey;
+//    QCloudAuthentationV5Creator* creator = [[QCloudAuthentationV5Creator alloc] initWithCredential:credential];
+//    QCloudSignature* signature =  [creator signatureForData:urlRequst];
+//    continueBlock(signature, nil);
+//}
 
 
 - (void)startJourney{
@@ -218,11 +214,6 @@ typedef void(^PushCheckHandler)(YbsAppPushStatus);
     if (@available(iOS 11.0, *)){
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
     }
-}
-
-- (void)configAMap{
-    [[AMapServices sharedServices] setEnableHTTPS:YES];
-    [AMapServices sharedServices].apiKey = kYbsAMapKey;
 }
 
 - (NSString *)getUniqueIdentifier{

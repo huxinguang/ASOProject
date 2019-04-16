@@ -19,7 +19,7 @@ static NSString *const baseTestUrl              = @"http://62.234.107.173:8088/"
  * 获取base Url
  */
 + (NSString *)baseUrl{
-    return [self baseTestUrl];
+    return [self baseDebugUrl];
 }
 
 /**
@@ -216,5 +216,25 @@ static NSString *const baseTestUrl              = @"http://62.234.107.173:8088/"
     return [NSString stringWithFormat:@"%@%@",@"https://admin.yun-bangshou.com:8099/",@"agreement/index.html"];
 }
 
+/**
+ * 消息列表
+ */
++ (NSString *)messageListUrl{
+    return [NSString stringWithFormat:@"%@%@",[self baseUrl],@"app/user/queryAppMessageList"];
+}
+
+/**
+ * 消息详情
+ */
++ (NSString *)messageDetailUrl{
+    return [NSString stringWithFormat:@"%@%@",[self baseUrl],@"app/user/queryAppMessage"];
+}
+
+/**
+ * 帮助
+ */
++ (NSString *)helpUrl{
+    return @"https://admin.yun-bangshou.com:8099/help/index.html";
+}
 
 @end

@@ -1,0 +1,525 @@
+http://shike.com/shike/api/profile/getUserInfo
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "userId": 37374140,
+        "nickname": null,
+        "avatar": null,
+        "todayIncome": "0.00",
+        "totalIncome": "0.00",
+        "balance": "0.00",
+        "register": 0,
+        "play": 1,
+        "download": 1,
+        "scheme": "itry://opensafari?p=XZjQ7vKLnfkd2zavN81u9mA5hy3vq0-uQuHh3SRthw6aRDEXGoepiQ__&callback",
+        "bundleId": "com.fivering.baoqinew",
+        "downloadUrl": "itms-services://?action=download-manifest&url=https%3A%2F%2Fshike.com%2Fitry%2Fdl%3Fipa%3Dcom.fivering.baoqinew.1555314339283.0%26bundleID%3Dcom.fivering.baoqinew",
+        "updateUrl": "https://testflight.apple.com/join/hivvbOnQ",
+        "guideList": 0,
+        "guideRed": 1,
+        "guideUpgrade": 1,
+        "needRegister": false,
+        "showSign": null,
+        "couponNum": null,
+        "rewardTimes": null,
+        "newInvite": 0,
+        "assistantUser": 0,
+        "access": 1,
+        "needReceiveExpCard": 0,
+        "needCollectTime": 0,
+        "showXb": 1,
+        "enterprise": false
+    }
+}
+
+http://shike.com/shike/api/appListIndex
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "app": [{
+            "sign": "",
+            "searchWord": "y***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/3c/e2/d5/3ce2d5bd-aadf-6bfb-e748-763ea5017564/source/100x100bb.jpg",
+            "number": 49,
+            "playing": false,
+            "category": "社交",
+            "money": "1.23",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1097492828",
+            "pre": 0,
+            "content": "腾讯旗下直播平台，真实交友，告别尬聊！",
+            "titleWord": "直播短视频分享平台",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.tencent.now"
+        }, {
+            "sign": "",
+            "searchWord": "模***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/fe/ae/5e/feae5e35-a8dd-e0fa-74cf-f91bb8b3bb0e/source/100x100bb.jpg",
+            "number": 1672,
+            "playing": false,
+            "category": "游戏",
+            "money": "2.13",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1398174687",
+            "pre": 0,
+            "content": "拍一部超级大电影",
+            "titleWord": "模拟电影大导演",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": true,
+            "bundleId": "com.cinemas.frenzied"
+        }, {
+            "sign": "",
+            "searchWord": "贷***",
+            "icon": "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/20/57/39/205739ec-109a-2432-d47e-65fa4a1a4fea/source/100x100bb.jpg",
+            "number": 2982,
+            "playing": false,
+            "category": "财务",
+            "money": "0.8",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1296773870",
+            "pre": 0,
+            "content": "贷款零门槛，极速下款1000-20万",
+            "titleWord": "小额闪电借款平台",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.halei.yucaiyuan"
+        }, {
+            "sign": "",
+            "searchWord": "育***",
+            "icon": "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/b2/e3/15/b2e3156a-ddd0-c929-82e7-39ad84b65d9d/source/100x100bb.jpg",
+            "number": 895,
+            "playing": false,
+            "category": "教育",
+            "money": "1.32",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "928864273",
+            "pre": 0,
+            "content": "和孩子一起爱上英语启蒙",
+            "titleWord": "专注英语早教启蒙",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.jiliguala.ios"
+        }, {
+            "sign": "",
+            "searchWord": "星***",
+            "icon": "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/59/d9/4c/59d94c53-9c6f-b367-5804-d6a501d5ab00/source/100x100bb.jpg",
+            "number": 175,
+            "playing": false,
+            "category": "生活",
+            "money": "1.22",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "390860325",
+            "pre": 0,
+            "content": "好货5折起，新人领红包享折上折",
+            "titleWord": "登陆享新人10元红包",
+            "optWord": "打开应用 *注册* 后试玩3分钟",
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.taobao.kbmeishi"
+        }, {
+            "sign": "",
+            "searchWord": "易***",
+            "icon": "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/06/0e/9a/060e9a32-722b-c5dd-6d1c-972f3f800fca/source/100x100bb.jpg",
+            "number": 127,
+            "playing": false,
+            "category": "生活",
+            "money": "1.6",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1328122918",
+            "pre": 0,
+            "content": "二手车网上商城,大平台,更省心",
+            "titleWord": "专业的二手车买卖平台",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.zhou.yxusedcar"
+        }, {
+            "sign": "",
+            "searchWord": "检***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/22/12/29/221229ea-c6a7-7c79-5616-ef4a8e5e4e51/source/100x100bb.jpg",
+            "number": 8,
+            "playing": false,
+            "category": "教育",
+            "money": "1.2",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "426340811",
+            "pre": 0,
+            "content": null,
+            "titleWord": null,
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.baidu.Wenku"
+        }, {
+            "sign": "",
+            "searchWord": "瓜***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/08/98/f7/0898f77c-f977-596f-b03c-1beb2f4dfcba/source/100x100bb.jpg",
+            "number": 733,
+            "playing": false,
+            "category": "生活",
+            "money": "1.26",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1277660521",
+            "pre": 0,
+            "content": "买二手车必备App",
+            "titleWord": "二手车网上商城",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.nc.uxinusednew"
+        }, {
+            "sign": "",
+            "searchWord": "英***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/b7/07/ff/b707ff5f-11bb-9492-e367-c0954d17c932/source/100x100bb.jpg",
+            "number": 57,
+            "playing": false,
+            "category": "教育",
+            "money": "1.14",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1076798292",
+            "pre": 0,
+            "content": "让口语更地道",
+            "titleWord": "英语外教平台",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.vipabc.newonthego.phone"
+        }, {
+            "sign": "",
+            "searchWord": "阅***",
+            "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/9f/f8/df/9ff8df97-063f-120c-349a-06fe3f70cd39/source/100x100bb.jpg",
+            "number": 235,
+            "playing": false,
+            "category": "图书",
+            "money": "1.3",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1340641916",
+            "pre": 0,
+            "content": "电子书小说合集下载",
+            "titleWord": "在线离线追书",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.ios.lsnovel"
+        }, {
+            "sign": "",
+            "searchWord": "机***",
+            "icon": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/f6/38/9e/f6389ee3-0ef8-1277-0a90-75b976a69c9b/source/100x100bb.jpg",
+            "number": 34,
+            "playing": false,
+            "category": "旅游",
+            "money": "1.31",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1367037344",
+            "pre": 0,
+            "content": null,
+            "titleWord": null,
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.tuniu.best"
+        }, {
+            "sign": "",
+            "searchWord": "机***",
+            "icon": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/c0/32/8c/c0328c0f-6a0f-b3f5-4e22-8bd8907298fa/source/100x100bb.jpg",
+            "number": 720,
+            "playing": false,
+            "category": "旅游",
+            "money": "1.31",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "379395415",
+            "pre": 0,
+            "content": "立即下载，让旅游说走就走！",
+            "titleWord": "机票酒店门票旅游攻略",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "ctrip.com"
+        }, {
+            "sign": "",
+            "searchWord": "二***",
+            "icon": "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/52/15/b7/5215b7f1-c036-c030-7563-622672951d80/source/100x100bb.jpg",
+            "number": 49,
+            "playing": false,
+            "category": "生活",
+            "money": "1.28",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1138302879",
+            "pre": 0,
+            "content": "一成首付开好车",
+            "titleWord": "买车必备APP",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.autounion.usedcar"
+        }, {
+            "sign": "",
+            "searchWord": "行***",
+            "icon": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/86/3c/e2/863ce272-daa9-e2d9-8e99-063388240650/source/100x100bb.jpg",
+            "number": 310,
+            "playing": false,
+            "category": "旅游",
+            "money": "1.3",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "999773808",
+            "pre": 0,
+            "content": "华人司导带你海外自由行",
+            "titleWord": "境外中文接送机包车游",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.huangbaoche.client.store"
+        }, {
+            "sign": "",
+            "searchWord": "火***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/42/9b/b9/429bb90e-6016-0503-094d-05faf1b07ef8/source/100x100bb.jpg",
+            "number": 1701,
+            "playing": false,
+            "category": "旅游",
+            "money": "1.33",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "688037240",
+            "pre": 0,
+            "content": "立即下载，让旅游说走就走！",
+            "titleWord": "机票酒店门票旅游攻略",
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "pro.ctrip.com"
+        }, {
+            "sign": "",
+            "searchWord": "旅***",
+            "icon": "https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/1b/01/ef/1b01efb6-73ab-cbca-f655-52e475eaf172/source/100x100bb.jpg",
+            "number": 767,
+            "playing": false,
+            "category": "旅游",
+            "money": "1.32",
+            "special": 0,
+            "today": false,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "447313708",
+            "pre": 0,
+            "content": null,
+            "titleWord": null,
+            "optWord": null,
+            "vipExp": false,
+            "notFree": false,
+            "bundleId": "com.tuniu.app"
+        }],
+        "update": false,
+        "updateUrl": "",
+        "times": 0,
+        "showCoupon": false,
+        "subscribeUrl": "webcal://shike.com/public/api/prePlay.ics?v=BGQsw12mwvfHM2GqEwP4MQ__",
+        "qqComicInstall": 0,
+        "validate": null,
+        "wechatValidate": null,
+        "showVision": null,
+        "shuqiInstall": 0,
+        "mengxiyouInstall": 0,
+        "preList": [],
+        "accPreList": [],
+        "redList": [],
+        "vipExpList": null,
+        "vipExpGroupList": null,
+        "showRemind": true,
+        "weiboInstall": 0
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://shike.com/shike/api/appList?download=1&asin=qLgKdimlcEzfieicJKI%2BmXlhA%2BmUfRLsA40wk0IwYlk6TA36J2ZZrflt4hAMO2SPN7H85BKHAMtE3OFtGbo0tVZI%2FUaBWPA1BALQixt129F9qxCnlXVLky3FPtkMJEgLisvzPToUxGuvW4AQ2My73%2BZqHTUNor6d0Px7Txuy%2F4Q5kBQ%2BQzhXAySeKhIjapdClpyXNPk3kRHjZzM0tVaiUz3YBUu05L%2BGlb7WJ7mjH5TvpCmjatt1fNuiRwVOB3ZY593%2BkE%2FTiTwf4uBNVqc790KjeTMxfuXd
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "app": [{
+            "sign": "65ED6AD10F5D80FC60BF99FD5C94342F18451A838581D00D9FC052137C9A8EA0",
+            "searchWord": "理***",
+            "icon": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/fe/f0/20/fef020b4-ca23-4b36-1a55-a057056d7abf/source/100x100bb.jpg",
+            "number": 0,
+            "playing": true,
+            "category": "财务",
+            "money": "1.04",
+            "special": 0,
+            "today": true,
+            "appType": 0,
+            "hasEgg": false,
+            "trackId": "1402360534",
+            "pre": 0,
+            "content": "理财工具之安全理财平台",
+            "titleWord": "萌橙理财",
+            "optWord": null,
+            "vipExp": true,
+            "notFree": false,
+            "bundleId": "com.mlczs"
+        }],
+        "update": false,
+        "updateUrl": "",
+        "times": 0,
+        "showCoupon": false,
+        "subscribeUrl": "webcal://shike.com/public/api/prePlay.ics?v=BGQsw12mwvfHM2GqEwP4MQ__",
+        "qqComicInstall": 0,
+        "validate": null,
+        "wechatValidate": null,
+        "showVision": null,
+        "shuqiInstall": 0,
+        "mengxiyouInstall": 0,
+        "preList": [],
+        "accPreList": [],
+        "redList": [],
+        "vipExpList": [{
+            "sign": "expBGQsw12mwvcu6nxb7g2oBX2mNO702Bl6azswBprsghu_",
+            "icon": "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/25/08/4d2508e1-c564-2709-7dfa-e9dff84f3bb6/source/60x60bb.jpg",
+            "trackName": "书旗小说",
+            "content": "明天18:00-20:00 可领取",
+            "money": "0.10",
+            "clickStatus": 2
+        }],
+        "vipExpGroupList": [{
+            "group": "明天18:00-20:00 可领取",
+            "data": [{
+                "sign": "expBGQsw12mwvcu6nxb7g2oBX2mNO702Bl6azswBprsghu_",
+                "icon": "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/25/08/4d2508e1-c564-2709-7dfa-e9dff84f3bb6/source/60x60bb.jpg",
+                "trackName": "书旗小说",
+                "content": "明天18:00-20:00 可领取",
+                "money": "0.10",
+                "clickStatus": 2
+            }]
+        }],
+        "showRemind": true,
+        "weiboInstall": 0
+    }
+}
+
+http://shike.com/shike/api/appDetail?sign=65ED6AD10F5D80FC60BF99FD5C94342F18451A838581D00D9FC052137C9A8EA0
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "sign": "65ED6AD10F5D80FC60BF99FD5C94342F18451A838581D00D9FC052137C9A8EA0",
+        "bundleId": "com.mlczs",
+        "searchWord": "理财",
+        "icon": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/fe/f0/20/fef020b4-ca23-4b36-1a55-a057056d7abf/source/100x100bb.jpg",
+        "rank": "1",
+        "money": "0.84",
+        "remainTime": 2097,
+        "scheme": "\"null\"://",
+        "special": 0,
+        "trackName": "萌橙理财",
+        "status": "0",
+        "trackId": "1402360534",
+        "playMoney": "0.2",
+        "hasReward": false,
+        "rewardMoney": null,
+        "direct": 0,
+        "directUrl": null,
+        "vipExp": true
+    }
+}
+
+
+
+http://shike.com/shike/api/appSubmit
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "time": 2,
+        "has_zan": false,
+        "status": "704"
+    }
+}
+
+
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "zan_sign": "grgc2ZdUIJ2mK16b780FQZrO9Amt*Cfp",
+        "has_zan": true,
+        "status": "1"
+    }
+}
+
+
+{
+    "code": "0",
+    "desc": "OK",
+    "data": {
+        "zan_sign": "grgc2ZdUIJ2mK16b780FQZrO9Amt*Cfp",
+        "has_zan": true,
+        "status": "1"
+    }
+}

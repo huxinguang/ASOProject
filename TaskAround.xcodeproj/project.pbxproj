@@ -23,6 +23,11 @@
 		96A5D5122264223300DF83B7 /* YbsHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D5112264223300DF83B7 /* YbsHomeViewController.m */; };
 		96A5D5152264227C00DF83B7 /* YbsMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D5142264227C00DF83B7 /* YbsMeViewController.m */; };
 		96A5D5182264250500DF83B7 /* MBProgressHUD+YbsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D5172264250500DF83B7 /* MBProgressHUD+YbsUtil.m */; };
+		96A5D5232265A4ED00DF83B7 /* YbsMessageDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D51F2265A4E300DF83B7 /* YbsMessageDetailVC.m */; };
+		96A5D5242265A4ED00DF83B7 /* YbsMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D5212265A4EC00DF83B7 /* YbsMessageViewController.m */; };
+		96A5D5282265A50900DF83B7 /* YbsMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D5272265A50900DF83B7 /* YbsMessageCell.m */; };
+		96A5D52B2265A51800DF83B7 /* YbsMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5D52A2265A51800DF83B7 /* YbsMessageModel.m */; };
+		96A5D52D2265B21200DF83B7 /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = 96A5D52C2265B21200DF83B7 /* File.json */; };
 		96A8B1B82220DD85006B27A6 /* YbsLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B1B72220DD85006B27A6 /* YbsLoginViewController.m */; };
 		96B325232234DD0D0060B306 /* NSTimer+FY.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B325222234DD0C0060B306 /* NSTimer+FY.m */; };
 		96CA2F2821FEDA48003A72C7 /* YbsWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CA2F2721FEDA48003A72C7 /* YbsWelcomeViewController.m */; };
@@ -119,6 +124,16 @@
 		96A5D5142264227C00DF83B7 /* YbsMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YbsMeViewController.m; sourceTree = "<group>"; };
 		96A5D5162264250500DF83B7 /* MBProgressHUD+YbsUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YbsUtil.h"; sourceTree = "<group>"; };
 		96A5D5172264250500DF83B7 /* MBProgressHUD+YbsUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YbsUtil.m"; sourceTree = "<group>"; };
+		96A5D51F2265A4E300DF83B7 /* YbsMessageDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbsMessageDetailVC.m; sourceTree = "<group>"; };
+		96A5D5202265A4EC00DF83B7 /* YbsMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbsMessageViewController.h; sourceTree = "<group>"; };
+		96A5D5212265A4EC00DF83B7 /* YbsMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbsMessageViewController.m; sourceTree = "<group>"; };
+		96A5D5222265A4ED00DF83B7 /* YbsMessageDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbsMessageDetailVC.h; sourceTree = "<group>"; };
+		96A5D5252265A50900DF83B7 /* YbsMessageDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YbsMessageDetailVC.h; path = ../../../../Yunhelper/source/TaskAround/Me/Controller/YbsMessageDetailVC.h; sourceTree = "<group>"; };
+		96A5D5262265A50900DF83B7 /* YbsMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbsMessageCell.h; sourceTree = "<group>"; };
+		96A5D5272265A50900DF83B7 /* YbsMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbsMessageCell.m; sourceTree = "<group>"; };
+		96A5D5292265A51800DF83B7 /* YbsMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbsMessageModel.h; sourceTree = "<group>"; };
+		96A5D52A2265A51800DF83B7 /* YbsMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbsMessageModel.m; sourceTree = "<group>"; };
+		96A5D52C2265B21200DF83B7 /* File.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
 		96A8B1B62220DD85006B27A6 /* YbsLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YbsLoginViewController.h; sourceTree = "<group>"; };
 		96A8B1B72220DD85006B27A6 /* YbsLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YbsLoginViewController.m; sourceTree = "<group>"; };
 		96B325212234DD0C0060B306 /* NSTimer+FY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FY.h"; sourceTree = "<group>"; };
@@ -272,6 +287,15 @@
 				96CA2F2721FEDA48003A72C7 /* YbsWelcomeViewController.m */,
 				96A8B1B62220DD85006B27A6 /* YbsLoginViewController.h */,
 				96A8B1B72220DD85006B27A6 /* YbsLoginViewController.m */,
+				96A5D5292265A51800DF83B7 /* YbsMessageModel.h */,
+				96A5D52A2265A51800DF83B7 /* YbsMessageModel.m */,
+				96A5D5262265A50900DF83B7 /* YbsMessageCell.h */,
+				96A5D5272265A50900DF83B7 /* YbsMessageCell.m */,
+				96A5D5222265A4ED00DF83B7 /* YbsMessageDetailVC.h */,
+				96A5D5252265A50900DF83B7 /* YbsMessageDetailVC.h */,
+				96A5D51F2265A4E300DF83B7 /* YbsMessageDetailVC.m */,
+				96A5D5202265A4EC00DF83B7 /* YbsMessageViewController.h */,
+				96A5D5212265A4EC00DF83B7 /* YbsMessageViewController.m */,
 				966F997521F47335006D7209 /* YbsWebViewController.h */,
 				966F997621F47335006D7209 /* YbsWebViewController.m */,
 				9659D357223659EA00383F40 /* YbsAlertView.h */,
@@ -384,6 +408,7 @@
 				B7607E9420EA008B00FAFCDF /* AppDelegate.m */,
 				B7607ECE20EA0A3E00FAFCDF /* YbsHeader.h */,
 				96E1619221F1935E005BF9A5 /* YbsMacro.h */,
+				96A5D52C2265B21200DF83B7 /* File.json */,
 				966F996E21F4650B006D7209 /* PrefixHeader.pch */,
 				B7607E9920EA008B00FAFCDF /* Main.storyboard */,
 				B7607E9C20EA008C00FAFCDF /* Assets.xcassets */,
@@ -592,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7607EA020EA008C00FAFCDF /* LaunchScreen.storyboard in Resources */,
+				96A5D52D2265B21200DF83B7 /* File.json in Resources */,
 				B7607E9D20EA008C00FAFCDF /* Assets.xcassets in Resources */,
 				B7607E9B20EA008B00FAFCDF /* Main.storyboard in Resources */,
 			);
@@ -673,8 +699,10 @@
 				96A8B1B82220DD85006B27A6 /* YbsLoginViewController.m in Sources */,
 				966F997721F47335006D7209 /* YbsWebViewController.m in Sources */,
 				96EC51F621F0681C000F7692 /* YbsNetworkUtil.m in Sources */,
+				96A5D5232265A4ED00DF83B7 /* YbsMessageDetailVC.m in Sources */,
 				96A5D5122264223300DF83B7 /* YbsHomeViewController.m in Sources */,
 				966F998121F5A3DF006D7209 /* YbsNavTitleView.m in Sources */,
+				96A5D52B2265A51800DF83B7 /* YbsMessageModel.m in Sources */,
 				96A5D5182264250500DF83B7 /* MBProgressHUD+YbsUtil.m in Sources */,
 				9649CA2A223A5FC700B36542 /* UITableView+HD_NoList.m in Sources */,
 				96E161E121F2E6EF005BF9A5 /* UIColor+YbsUtil.m in Sources */,
@@ -690,6 +718,7 @@
 				96CA2F2821FEDA48003A72C7 /* YbsWelcomeViewController.m in Sources */,
 				9659D3502236229C00383F40 /* UIButton+EnlargeTouchArea.m in Sources */,
 				966F998421F5A44D006D7209 /* YbsNavBarButton.m in Sources */,
+				96A5D5242265A4ED00DF83B7 /* YbsMessageViewController.m in Sources */,
 				B7607F8C20EA1AC100FAFCDF /* YbsTabBarController.m in Sources */,
 				B7607F8920EA1A9900FAFCDF /* YbsNavigationController.m in Sources */,
 				96EF48A62248CE3100F849A8 /* UIButton+Layout.m in Sources */,
@@ -697,6 +726,7 @@
 				9640000C222E842900D43370 /* NSDictionary+YbsObject.m in Sources */,
 				96E161DB21F1D849005BF9A5 /* UIViewController+YbsUtil.m in Sources */,
 				9659D3562236262D00383F40 /* UIBarButtonItem+YbsAdd.m in Sources */,
+				96A5D5282265A50900DF83B7 /* YbsMessageCell.m in Sources */,
 				96EF48A32243912100F849A8 /* UIImage+YbsUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

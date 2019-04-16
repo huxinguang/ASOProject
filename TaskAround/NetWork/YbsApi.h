@@ -66,6 +66,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)userAgreementUrl;
 
++ (NSString *)messageListUrl;
+
++ (NSString *)messageDetailUrl;
+
++ (NSString *)helpUrl;
+
 
 
 @end
